@@ -15,7 +15,7 @@ const Weather = () => {
     const fetchWeather = async (cityName) => {
         try {
             const response = await axios.get(
-                `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`
+                `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`
             );
             setWeather(response.data);
             setError('');
